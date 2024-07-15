@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petiscos</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      <button class="back-button" onclick="window.location.href = '../index.html'">
+        <i class="fas fa-arrow-left"></i> Voltar
+      </button>
+
+    </div>
+    <div class="logo-container">
+      <img src="../assets/logo.png" class="logo" alt="Logo">
+    </div>
+
+    <div class="content">
+
+      <div class="item-container">
+        <img src="img/petiscos/1.png" class="item-image" alt="Salaminho">
+        <div class="item-details">
+          <h2 class="item-title">Salaminho</h2>
+          <p class="item-description">Menu de restaurante digital.</p>
+          <div class="price-button-container">
+            <span class="item-price">R$ 5.00</span>
+            <button class="order-button" onclick="handleAddToCart('Salaminho', 5.00)">
+              <i class="fas fa-cart-plus"></i> ADICIONAR
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item-container">
+        <img src="img/petiscos/2.png" class="item-image" alt="Batata Frita Tradicional">
+        <div class="item-details">
+          <h2 class="item-title">Batata Frita Tradicional</h2>
+          <p class="item-description">Menu de restaurante digital.</p>
+          <div class="price-button-container">
+            <span class="item-price">R$ 5.00</span>
+            <button class="order-button" onclick="handleAddToCart('Batata Frita Tradicional', 5.00)">
+              <i class="fas fa-cart-plus"></i> ADICIONAR
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item-container">
+        <img src="img/petiscos/3.png" class="item-image" alt="Batata com Queijo e Bacon">
+        <div class="item-details">
+          <h2 class="item-title">Batata com Queijo e Bacon</h2>
+          <p class="item-description">Menu de restaurante digital.</p>
+          <div class="price-button-container">
+            <span class="item-price">R$ 5.00</span>
+            <button class="order-button" onclick="handleAddToCart('Batata com Queijo e Bacon', 5.00)">
+              <i class="fas fa-cart-plus"></i> ADICIONAR
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item-container">
+        <img src="img/petiscos/4.png" class="item-image" alt="Mandioquinha Frita">
+        <div class="item-details">
+          <h2 class="item-title">Mandioquinha Frita</h2>
+          <p class="item-description">Menu de restaurante digital.</p>
+          <div class="price-button-container">
+            <span class="item-price">R$ 5.00</span>
+            <button class="order-button" onclick="handleAddToCart('Mandioquinha Frita', 5.00)">
+              <i class="fas fa-cart-plus"></i> ADICIONAR
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item-container">
+        <img src="img/petiscos/5.png" class="item-image" alt="Calabresa com Fritas">
+        <div class="item-details">
+          <h2 class="item-title">Calabresa com Fritas</h2>
+          <p class="item-description">Menu de restaurante digital.</p>
+          <div class="price-button-container">
+            <span class="item-price">R$ 5.00</span>
+            <button class="order-button" onclick="handleAddToCart('Calabresa com Fritas', 5.00)">
+              <i class="fas fa-cart-plus"></i> ADICIONAR
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item-container">
+        <img src="img/petiscos/6.png" class="item-image" alt="Calabresa Acebolada">
+        <div class="item-details">
+          <h2 class="item-title">Calabresa Acebolada</h2>
+          <p class="item-description">Menu de restaurante digital.</p>
+          <div class="price-button-container">
+            <span class="item-price">R$ 5.00</span>
+            <button class="order-button" onclick="handleAddToCart('Calabresa Acebolada', 5.00)">
+              <i class="fas fa-cart-plus"></i> ADICIONAR
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item-container">
+        <img src="img/petiscos/7.png" class="item-image" alt="Filé com Fritas">
+        <div class="item-details">
+          <h2 class="item-title">Filé com Fritas</h2>
+          <p class="item-description">Menu de restaurante digital.</p>
+          <div class="price-button-container">
+            <span class="item-price">R$ 5.00</span>
+            <button class="order-button" onclick="handleAddToCart('Filé com Fritas', 5.00)">
+              <i class="fas fa-cart-plus"></i> ADICIONAR
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item-container">
+        <img src="img/petiscos/8.png" class="item-image" alt="Picanha com Fritas">
+        <div class="item-details">
+          <h2 class="item-title">Picanha com Fritas</h2>
+          <p class="item-description">Menu de restaurante digital.</p>
+          <div class="price-button-container">
+            <span class="item-price">R$ 5.00</span>
+            <button class="order-button" onclick="handleAddToCart('Picanha com Fritas', 5.00)">
+              <i class="fas fa-cart-plus"></i> ADICIONAR
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item-container">
+        <img src="img/petiscos/9.png" class="item-image" alt="Frango a Passarinho">
+        <div class="item-details">
+          <h2 class="item-title">Frango a Passarinho</h2>
+          <p class="item-description">Menu de restaurante digital.</p>
+          <div class="price-button-container">
+            <span class="item-price">R$ 5.00</span>
+            <button class="order-button" onclick="handleAddToCart('Frango a Passarinho', 5.00)">
+              <i class="fas fa-cart-plus"></i> ADICIONAR
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item-container">
+        <img src="img/petiscos/10.png" class="item-image" alt="Queijo Coalho">
+        <div class="item-details">
+          <h2 class="item-title">Queijo Coalho</h2>
+          <p class="item-description">Bebida energética.</p>
+          <div class="price-button-container">
+            <span class="item-price">R$ 7.00</span>
+            <button class="order-button" onclick="handleAddToCart('Queijo Coalho', 7.00)">
+              <i class="fas fa-cart-plus"></i> ADICIONAR
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="item-container">
+        <img src="img/petiscos/11.png" class="item-image" alt="Camarão ao Alho e òleo">
+        <div class="item-details">
+          <h2 class="item-title">Camarão ao Alho e òleo</h2>
+          <p class="item-description">Bebida energética.</p>
+          <div class="price-button-container">
+            <span class="item-price">R$ 7.00</span>
+            <button class="order-button" onclick="handleAddToCart('Camarão ao Alho e òleo', 7.00)">
+              
+              <i class="fas fa-cart-plus"></i> ADICIONAR
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="item-container">
+        <img src="img/petiscos/12.png" class="item-image" alt="Tilápia Crocante">
+        <div class="item-details">
+          <h2 class="item-title">Tilápia Crocante</h2>
+          <p class="item-description">Bebida energética.</p>
+          
+          <div class="price-button-container">
+            <span class="item-price">R$ 7.00</span>
+            <button class="order-button" onclick="handleAddToCart('Tilápia Crocante', 7.00)">
+              
+              <i class="fas fa-cart-plus"></i> ADICIONAR
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-container">
+        
+    </div>
+
+    <div class="footer">
+      <button class="cart-button" onclick="handleCartPress()">
+        <i class="fas fa-shopping-cart"></i> CARRINHO (<span id="cart-count">0</span>)
+      </button>
+    </div>
+  </div>
+
+  <div id="cart-modal" class="modal" style="display:none;">
+    <div class="modal-content">
+      <h2>Seu Carrinho</h2>
+      <div id="cart-items"></div>
+      <div class="total-container">
+        <span id="total-text">Total: R$ 0.00</span>
+      </div>
+      <input type="text" id="customer-name" placeholder="Nome do Cliente" />
+      <button class="close-button" onclick="handleCloseCart()">FECHAR</button>
+      <button class="close-order-button" onclick="handleCloseOrder()">FECHAR PEDIDO</button>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
